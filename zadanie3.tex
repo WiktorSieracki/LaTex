@@ -1,0 +1,136 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[MeX]{polski} 
+\usepackage[utf8]{inputenc}  
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{data.bib}
+
+
+
+\title{Tytuł pracy}
+\author{Wiktor Sieracki}
+
+\begin{document}
+	\maketitle
+	
+	\begin{abstract}
+		Pierwszy projekt w \LaTeX  
+	\end{abstract}
+	
+	
+	\tableofcontents
+	\listoftables
+	\listoffigures
+	
+	\newpage
+	
+	\section{Rozdział 1}
+	\subsection{Podrozdział 1}
+	 Lorem ipsum \underline{dolor sit amet, consectetur adipiscing elit. Vivamus et varius arcu}, vel lacinia massa. Nam\textbf{ fermentum id lectus a convallis. N}ulla egestas libero non purus lacinia, ut venenatis risus auctor. Nam rhoncus felis nec velit commodo, id auctor nisi dictum. Nulla id auctor ante, sit amet dapibus eros. Aenean a maximus dolor. Etiam ullamcorper mollis ullamcorper. Nullam bibendum facilisis augue non consectetur.
+
+  
+	\[
+ \lim_{x\to 0}{\frac{e^x-1}{2x}}
+ \overset{\left[\frac{0}{0}\right]}{\underset{\mathrm{H}}{=}}
+ \lim_{x\to 0}{\frac{e^x}{2}}={\frac{1}{2}}
+\]
+\label{wzor 1}
+Vivamus dignissim velit id mauris porta, eleifend interdum sem condimentum. Ut tempor tortor a nibh hendrerit, non facilisis neque malesuada. Nam finibus elit ut finibus volutpat. Proin metus eros, molestie in suscipit eu, rhoncus in enim. Suspendisse blandit volutpat purus ac aliquet. Fusce est neque, hendrerit \textbf{eleifend placerat sed, pellentesque vitae lorem. Integer sapien erat, sollicitudin euismod mollis non, ultrices at sapien.} Nam efficitur venenatis leo vel volutpat. Vivamus elementum elit mattis eros rutrum, sed vehicula mi vulputate. In accumsan risus sit amet metus euismod, non sollicitudin mauris suscipit. In nec risus eget lectus \textit{malesuada dapibus vitae eget leo. Nullam viverra est non erat dapibus, quis ultrices lacus ultricies.} Phasellus consequat ipsum nec venenatis euismod.
+
+
+	\subsection{Podrozdział 2}
+	Duis tempus tortor erat, non ullamcorper arcu lobortis vel. Donec facilisis, turpis vel pretium eleifend, lectus justo feugiat risus, vitae interdum turpis metus vitae erat. Etiam dictum nulla tincidunt leo vulputate, at sollicitudin massa tincidunt. Phasellus congue bibendum tempor. Integer vitae orci nibh. Fusce commodo vestibulum leo, non rhoncus velit fermentum vitae. Morbi pharetra vitae purus et aliquam. Praesent lacus libero, efficitur a fringilla vel, elementum sit amet sem. Pellentesque ac aliquam est.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=7cm, height=7cm]{samochod.jpg}
+		\caption{samochód }
+	\end{figure}
+ \label{samochod}
+	
+\section{Rozdział 2}
+\subsection{Podrozdział 1}
+	Morbi ut ultrices ex. Cras diam est, pharetra vitae ipsum non, vehicula bibendum massa. Duis et enim sed ipsum cursus vulputat\textit{e. Vestibulum vel placerat neque, ac elementum nunc. Aliquam imperdiet nisi sed erat rhoncus, ac interdum justo vestibulum. Vivamus eu elit porta turpis condimentum porttitor. Morbi suscipit diam sit amet ligula feugiat imperdie}t. Etiam sit amet purus eu orci dapibus ullamcorper. Proin pretium lacinia odio, quis vestibulum mi suscipit ac. Proin tincidunt pulvinar dolor, eu efficitur nibh varius id. Mauris ac eleifend ante.
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c c c|} 
+			\hline
+			jeden hamburger & dwa hamburger & trzy hamburger \\
+			\hline\hline
+			1 & 2 & 3  \\ 
+			\hline
+			1 & 2 & 3  \\
+			\hline
+			1 & 2 & 3 \\ 
+			\hline
+		\end{tabular}
+  \label{tabela}
+	\caption{3 kolejne liczby naturalne zaczynając od jedynki i hamburger}
+	\end{table}
+	Lorem ipsum dolor sit amet, consectetur \cite{piec}adipiscing elit. Cras mi libero, vulputate in lobortis in, pretium at massa. Sed eu ex mi. Sed magn
+\begin{enumerate}
+\item a dolor, luctus quis rhoncus vitae, rhoncus scelerisque nisl. Nunc eget nisi felis. Donec consectetur purus mollis, auctor dol
+\end{enumerate}
+o
+\begin{enumerate}
+\item r quis, suscipit nibh. Nulla maximus dui mi, ac mollis nisl lobortis ut. Fusce eleifend, lorem ac commodo tincidunt, nisi enim condimentum elit, a mattis
+\item leo lorem ut magna. Praesent id purus vel magna iaculis aliquam sed fermentum justo. Morbi rhoncus iaculis est quis interdum.
+\item nsectetur purus mollis, auctor dolor quis, suscipit nibh. Nulla maximus dui mi, ac mollis nisl lobortis ut. Fusce eleifend, lorem ac commodo tincidunt, nisi enim condimentum elit, a mattis leo lorem ut magna. Praesent id purus vel magna iaculis aliquam sed fermentum justo. Morbi rhoncus iaculis est quis interdum.
+\end{enumerate}
+ leo lorem ut magna. Praesent id purus vel magna iaculis aliquam sed fermentum justo. Morbi rhoncus iaculis est quis interdum.
+
+Aliquam accumsan lorem et rutrum placerat. Mauris rhoncus luctus arcu vitae imperdiet. Morbi suscipit sem vitae ligula mattis auctor. Phasellus molestie mi id metus maximus volutpat. Pellentesque dignissim sed enim at fringilla. Curabitur porta arcu eget nunc hendrerit, non mollis risus commodo. Curabitur vel laoreet enim, eu volutpat lorem. Duis quis eleifend mauris, quis malesuada nibh. Duis nec tincidunt sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ac mollis est. Vivamus sit amet arcu et lorem varius convallis. Phasellus pharetra sollicitudin diam non blandit. Integer commodo leo non nisi posuere luctus. Donec facilisis gravida porttitor.
+
+
+
+	
+	\subsection{Podrozdział 2}
+	Donec scelerisque placerat molestie. Mauris dapibus dolor tempor efficitur viverra. Curabitur quis accumsan ipsum. Nulla facilisi. Ut accumsan, turpis sit amet bibendum lobortis, ex est lacinia eros, gravida hendrerit ligula elit vitae enim. Etiam convallis ex turpis, at blandit metus condimentum aliquam. Pellentesque elementum mi\cite{cztery} nec urna consequat cursus. Vestibulum ut neque ut dolor rutrum lobortis ullamcorper gravida nibh. Duis imperdiet, erat a luctus luctus, lorem diam iaculis orci, non consequat dui dui quis ligula. Fusce efficitur ex nec molestie accumsan. Nulla dignissim purus eget libero aliquet placerat. Vestibulum viverra felis at augue faucibus tristique. Nulla sed blandit ex, nec congue purus. Ut bibendum eros vel dignissim consectetur. In mattis sed libero et tempus. Proin vel condimentum dolor.
+	\[
+ z = \overbrace{
+   \underbrace{x}_\text{real} + i
+   \underbrace{y}_\text{imaginary}
+  }^\text{complex number}
+\] 
+\label{wzor2}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mi libero, vulputate in lobortis in, pretium at massa. Sed eu ex mi. Sed magna dolor, luctus quis rhoncus vitae, rhoncus scelerisque nisl. Nunc eget nisi felis. Donec consectetur purus mollis, auctor dolor quis, suscipit nibh. Nulla maximus dui mi, ac mollis nisl lobortis ut. Fusce eleifend, lorem ac commodo tincidunt, nisi enim condimentum elit, a mattis leo lorem ut magna. Praesent id purus vel magna iaculis aliquam sed fermentum justo. Morbi rhoncus iaculis est quis interdum.
+
+Aliquam accumsan lorem et rutrum placerat. Mauris rhoncus luctus arcu vitae imperdiet. Morbi suscipit sem vitae ligula mattis auctor. Phasellus molestie mi id metus maximus volutpat. Pellentesque dignissim sed enim at fringilla. Curabitur porta arcu eget nunc hendrerit, non mollis risus commodo. Curabitur vel laoreet enim, eu volutpat lorem. Duis quis eleifend mauris, quis malesuada nibh. Duis nec tincidunt sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ac mollis est. Vivamus sit amet arcu et lorem varius convallis. Phasellus pharetra sollicitudin diam non blandit. Integer commodo leo non nisi posuere luctus. Donec facilisis gravida porttitor.
+
+Donec scelerisque placerat molestie. Mauris dapibus dolor tempor efficitur viverra. Curabitur quis accumsan ipsum. Nulla facilisi. Ut accumsan, turpis sit amet bibendum lobortis, ex est lacinia eros, gravida hendrerit ligula elit vitae enim. Etiam convallis ex turpis, at blandit metus condimentum aliquam. Pellentesque elementum mi nec urna consequat cursus. Vestibulum ut neque ut dolor rutrum lobortis ullamcorper gravida nibh. Duis imperdiet, erat a luctus luctus, lorem diam iaculis orci, non consequat dui dui quis ligula. Fusce efficitur ex nec molestie accumsan. Nulla dignissim purus eget libero aliquet placerat. Vestibulum viverra felis at augue faucibus tristique. Nulla sed blandit ex, nec congue purus. Ut bibendum eros vel dignissim consectetur. In mattis sed libero et tempus. Proin vel condimentum dolor.
+
+Morbi eu sapien ipsum. Phasellus \cite{trzy}vestibulum neque et diam rutrum consequat. Ut consectetur nibh id mi bibendum malesuada. Maecenas suscipit vel mi sit amet facilisis. Ut pulvinar pellentesque turpis, ac faucibus neque dignissim sit amet. Aliquam posuere est nec neque mollis consectetur vel eu velit. Sed eu nisi non elit molestie molestie. Nullam ultrices lacinia lectus fermentum lacinia. Aliquam interdum mi nec risus malesuada, sed suscipit erat imperdiet. Donec quis tellus commodo, porttitor ex quis, tristique ligula. Suspendisse egestas, lacus et varius faucibus, lorem lacus consequat nunc, vel interdum dui risus at elit. In ullamcorper condimentum dui eu tempus. Nunc id malesuada tortor, non lobortis felis. Etiam vel viverra arcu.
+
+Aenean eleifend venenatis nunc. Curabitur eu laoreet risus. Morbi auctor lobortis aliquam. Ut eleifend turpis in tempor volutpat. Quisque imperdiet ante sed dictum vulputate. Nullam sed justo et massa fringilla pretium. Vivamus sit amet tempus dolor. Quisque posuere a odio sed dapibus. Nunc a sapien non ipsum pretium finibus. Pellentesque eget dolor ut velit sagittis porta at ac odio.
+
+Nulla non elementum leo, vel pulvinar arcu. Nulla vulputate lobortis pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer scelerisque quam quis sapien hendrerit dictum. Quisque sit amet bibendum quam. Curabitur arcu quam, aliquam vitae maximus quis, consequat vel odio. Phasellus in arcu sollicitudin, tincidunt massa et, consectetur tortor. Vivamus et auctor risus.
+
+Curabitur et pulvinar diam, sit amet ultricies augue. Nulla varius orci non mi faucibus convallis eget a lacus. Ut arcu massa, maximus nec magna non, egestas porta augue. Duis dignissim velit vitae ex posuere tincidunt. Mauris non odio pellentesque, venenatis nisl et, ultrices sapien. Ut neque est, dapibus in nunc in, congue placerat lacus. Nunc eu euismod est. Sed ultrices nisi facilisis nunc maximus mattis. Maecenas turpis ligula, suscipit in quam ac, consequat iaculis dolor. Nullam a finibus lacus. Morbi quis tincidunt nisi. Praesent quis dignissim eros.
+
+Aenean convallis posuere libero vel consectetur. Vestibulum nisl libero, placerat quis laoreet et, congue fringilla eros. Morbi a turpis pulvinar, vulputate dui quis, consequat urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur vitae quam fermentum, ultricies ipsum at, tristique dolor. Morbi quis rhoncus sapien. Nunc dignissim iaculis enim, lobortis gravida diam sodales at. Etiam cursus libero ipsum, id congue eros ultricies nec. Vivamus rhoncus mi ac finibus commodo. In nec fringilla lorem. Pellentesque sed porttitor metus, in ultricies lacus.
+
+Curabitur lectus justo, auctor commodo pulvinar \cite{dwa}vel, pulvinar quis leo. Donec fringilla placerat eros eu facilisis. Donec efficitur mauris sed placerat dictum. Etiam tristique tristique ante, at euismod urna fermentum a. Fusce vitae ipsum metus. Integer sit amet ipsum lorem. Sed dictum eros vel ultrices scelerisque. Quisque pretium augue diam, id malesuada leo tristique vel. Quisque fermentum nisi non porttitor dictum.
+
+Vivamus et justo ante. Morbi metus felis, dictum eu feugiat non, feugiat nec diam. Aliquam convallis, felis nec blandit pellentesque, justo tortor maximus mi, ac varius risus est vel velit. Morbi ultrices rhoncus metus. Suspendisse posuere ex in convallis rutrum. Maecenas dapibus, ante sit amet varius fermentum, nisl velit efficitur elit, eu hendrerit felis magna ut justo. Quisque dictum turpis ac dui venenatis, eu congue augue porttitor. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et metus massa. Quisque odio velit, feugiat nec dapibus nec, molestie in enim. Nullam in arcu sed odio mattis tempor. Maecenas ultrices dolor at velit imperdiet, vitae suscipit metus pharetra. Aliquam finibus in nulla at ornare.
+Morbi eu sapien ipsum. \cite{jeden}Phasellus vestibulum neque et diam rutrum consequat. Ut consectetur nibh id mi bibendum malesuada. Maecenas suscipit vel mi sit amet facilisis. Ut pulvinar pellentesque turpis, ac faucibus neque dignissim sit amet. Aliquam posuere est nec neque mollis consectetur vel eu velit. Sed eu nisi non elit molestie molestie. Nullam ultrices lacinia lectus fermentum lacinia. Aliquam interdum mi nec risus malesuada, sed suscipit erat imperdiet. Donec quis tellus commodo, porttitor ex quis, tristique ligula. Suspendisse egestas, lacus et varius faucibus, lorem lacus consequat nunc, vel interdum dui risus at elit. In ullamcorper condimentum dui eu tempus. Nunc id malesuada tortor, non lobortis felis. Etiam vel viverra arcu.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=10cm, height=8cm]{hamburger.jpg}
+		\caption{hamburger}
+	\end{figure}
+ \label{hamburger}
+Aenean eleifend venenatis nunc. Curabitur eu laoreet risus. Morbi auctor lobortis aliquam. Ut eleifend turpis in tempor volutpat. Quisque imperdiet ante sed dictum vulputate. Nullam sed justo et massa fringilla pretium. Vivamus sit amet tempus dolor. Quisque posuere a odio sed dapibus. Nunc a sapien non ipsum pretium finibus. Pellentesque eget dolor ut velit sagittis porta at ac odio.
+
+Nulla non elementum leo, vel pulvinar arcu. Nulla vulputate lobortis pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer scelerisque quam quis sapien hendrerit dictum. Quisque sit amet bibendum quam. Curabitur arcu quam, aliquam vitae maximus quis, consequat vel odio. Phasellus in arcu sollicitudin, tincidunt massa et, consectetur tortor. \textbf{Vivamus et auctor risus.}
+
+	
+	\section{Bibliografia}
+	\printbibliography
+	
+\end{document}

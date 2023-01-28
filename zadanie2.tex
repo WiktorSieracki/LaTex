@@ -1,0 +1,117 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Warsaw}
+\usecolortheme{fly}
+\title{Zadanie 2}
+\author{Wiktor Sieracki }
+\date{January 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\newpage
+Morbi eu sapien ipsum. Phasellus vestibulum neque et diam rutrum consequat. Ut consectetur nibh id mi bibendum malesuada. Maecenas suscipit vel mi sit amet facilisis. Ut pulvinar pellentesque turpis, ac faucibus neque dignissim sit amet. Aliquam posuere est nec neque mollis consectetur vel eu velit. Sed eu nisi non elit molestie molestie. Nullam ultrices lacinia lectus fermentum lacinia. Aliquam interdum mi nec risus malesuada, sed suscipit erat imperdiet. Donec quis tellus commodo, porttitor ex quis, tristique ligula. Suspendisse egestas, lacus et varius faucibus, lorem lacus consequat nunc, vel interdum dui risus at elit. In ullamcorper condimentum dui eu tempus. Nunc id malesuada tortor, non lobortis felis. Etiam vel viverra arcu.
+
+Aenean eleifend venenatis nunc. Curabitur eu laoreet risus. Morbi auctor lobortis aliquam. Ut eleifend turpis in tempor volutpat. Quisque imperdiet ante sed dictum vulputate. Nullam sed justo et massa fringilla pretium. Vivamus sit amet tempus dolor. Quisque posuere a odio sed dapibus. Nunc a sapien non ipsum pretium finibus. Pellentesque eget dolor ut velit sagittis porta at ac odio.
+
+Nulla non elementum leo, vel pulvinar arcu. Nulla vulputate lobortis pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer scelerisque quam quis sapien hendrerit dictum. Quisque sit amet bibendum quam. Curabitur arcu quam, aliquam vitae maximus quis, consequat vel odio. Phasellus in arcu sollicitudin, tincidunt massa et, consectetur tortor. Vivamus et auctor risus.
+
+Curabitur et pulvinar diam, sit amet ultricies augue. Nulla varius orci non mi faucibus convallis eget a lacus. Ut arcu massa, maximus nec magna non, egestas porta augue. Duis dignissim velit vitae ex posuere tincidunt. Mauris non odio pellentesque, venenatis nisl et, ultrices sapien. Ut neque est, dapibus in nunc in, congue placerat lacus. Nunc eu euismod est. Sed ultrices nisi facilisis nunc maximus mattis. Maecenas turpis ligula, suscipit in quam ac, consequat iaculis dolor. Nullam a finibus lacus. Morbi quis tincidunt nisi. Praesent quis dignissim eros.
+
+Aenean convallis posuere libero vel consectetur. Vestibulum nisl libero, placerat quis laoreet et, congue fringilla eros. Morbi a turpis pulvinar, vulputate dui quis, consequat urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur vitae quam fermentum, ultricies ipsum at, tristique dolor. Morbi quis rhoncus sapien. Nunc dignissim iaculis enim, lobortis gravida diam sodales at. Etiam cursus libero ipsum, id congue eros ultricies nec. Vivamus rhoncus mi ac finibus commodo. In nec fringilla lorem. Pellentesque sed porttitor metus, in ultricies lacus.
+
+\begin{enumerate}
+    \item 1
+    \item 2
+    \item 3
+\end{enumerate}
+\includegraphics[width=6cm,height=6cm]{banana.jpg}
+\label{banan}
+\newpage
+\begin{table}
+			\hfill
+		\begin{tabular}{|c||c||c|}
+			\hline
+			1 & 1 & 1 \\ 
+			\hline
+			2 & 2 & 2\\ 
+			\hline
+			3 & 3 & 3\\ 
+			\hline
+		\end{tabular}
+		\end{table}
+  \label{tabelka}
+\label{book}
+  \newpage
+\includegraphics[width=6cm,height=6cm]{book.jpg}
+\begin{itemize}
+    \item banan \ref{banan}
+    \item ksiazka \ref{book}
+\end{itemize}
+\newpage
+\begin{enumerate}
+    \item jeden
+    \item dwa
+    \item trzy
+    \item tabelka \ref{tabelka}
+\end{enumerate}
+
+\begin{frame}{123}
+\begin{columns}[T]
+	\column{1\textwidth}
+	\begin{itemize}
+		\item skarpetki
+		\item olówek
+		\item klucz
+	\end{itemize}
+	
+	\column{1\textwidth}
+	\hspace*{-8cm}
+	\includegraphics[width=8cm]{socks.jpg}
+ \label{skarpetki}
+
+
+ 
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}{zdjecia}
+	\begin{columns}
+		\column{0.2\textwidth}
+		\begin{figure}
+			\hspace*{-2cm}
+			\includegraphics[width=4cm]{pencil.jpg}
+			\caption{ołówek}
+   \label{olowek}
+		\end{figure}
+		
+		\column{0.2\textwidth}
+		\begin{figure}
+			\hspace*{-1cm}
+			\includegraphics[width=4cm]{key.jpg}
+   \label{klucz}
+   			\caption{klucz do sukcesu}
+			
+		\end{figure}
+	\end{columns}
+\end{frame}
+
+
+
+\section{bibliografia}
+\begin{itemize}
+    \item zdjecia\_ołówków.com \ref{olowek}
+    \item zdjecia\_kluczy.com \ref{klucz}
+    \item zdjecia\_książek.com \ref{book}
+    \item zdjecia\_skarpet.com \ref{skarpetki}
+\end{itemize}
+
+
+
+
+\end{document}
